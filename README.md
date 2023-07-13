@@ -33,6 +33,10 @@ Don't put the bash file in the Grim Dawn directory it will work but it will just
 ./GDMLinux.sh
 ```
 
+## Author Removal
+
+If you want me to remove a mod from a issue
+
 ## Authors
 
 - [@UnknownSuperficialNight](https://github.com/UnknownSuperficialNight)
