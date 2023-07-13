@@ -11,6 +11,9 @@ Grim Dawn mod installer for linux
 - [Grim main menu](https://forums.crateentertainment.com/t/request-main-menu-selection/100293/17)
 - [Grim UI](https://forums.crateentertainment.com/t/rel-grim-ui/86207)
 - [Grim Internals](https://forums.crateentertainment.com/t/tool-grim-internals/38773)
+- [Large_Cursors](https://www.nexusmods.com/grimdawn/mods/90)
+- [JournalNumbers](https://www.nexusmods.com/grimdawn/mods/81)
+- [Faction_goodinfos](https://www.nexusmods.com/grimdawn/mods/84)
 
 **Coming Soon**
 - [GrimTex](https://www.nexusmods.com/grimdawn/mods/141)
