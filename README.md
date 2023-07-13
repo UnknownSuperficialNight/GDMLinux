@@ -35,7 +35,7 @@ Don't put the bash file in the Grim Dawn directory it will work but it will just
 
 ## Author Removal
 
-If you want me to remove a mod from a issue
+If you are the author of one of these mods and you want me to remove your mod make a issue and i will remove it :)
 
 ## Authors
 
