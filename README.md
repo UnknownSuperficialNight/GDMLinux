@@ -26,8 +26,8 @@ Use the More Mods Label to mark it as a recommendation
 Install commands
 
 ```bash
-  wget ''
-  chmod +x ''
+  wget 'https://github.com/UnknownSuperficialNight/GDMLinux/releases/download/v0.1/GDMLinux.sh'
+  chmod +x 'GDMLinux.sh'
 ```
 Don't put the bash file in the Grim Dawn directory it will work but it will just be messy try installing in a location where you can keep this permanently my choice is ~/Games
 ## Usage
