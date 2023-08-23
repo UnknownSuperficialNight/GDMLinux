@@ -36,9 +36,20 @@ Don't put the bash file in the Grim Dawn directory it will work but it will just
 ./GDMLinux.sh
 ```
 
+## Uninstall
+I wont make a script here this will be manual since it's so easy just remove the following directorys and files and you are done
+- cache
+- tmp_grim_GDML
+- gum
+- GDMLinux.sh
+
 ## Author Removal
 
 If you are the author of one of these mods and you want me to remove your mod make a issue and i will remove it :)
+
+## Future temp 
+
+Notes it will be awhile till i can get GrimTex working since id have to set up my own delivery of the files since the websites it's hosted on wont work with scripts
 
 ## Authors
 
