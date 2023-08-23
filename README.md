@@ -47,9 +47,9 @@ I wont make a script here this will be manual since it's so easy just remove the
 
 If you are the author of one of these mods and you want me to remove your mod make a issue and i will remove it :)
 
-## Future temp 
+## Future temp Notes 
 
-Notes it will be awhile till i can get GrimTex working since id have to set up my own delivery of the files since the websites it's hosted on wont work with scripts
+It will be awhile till i can get GrimTex working since id have to set up my own delivery of the files since the websites it's hosted on wont work with scripts
 
 ## Authors
 
