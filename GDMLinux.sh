@@ -31,7 +31,7 @@ declare -A menu_items=(
 	["Grim_Internals"]="Grim_Internals Grim_Internals_Uninstall"
 	["Cursors"]="Grim_Dawn_Larger_Cursors_res_2560x1440_2k Grim_Dawn_Larger_Cursors_res_3840x1600 Grim_Dawn_Larger_Cursors_res_3840x2160_4k Grim_Dawn_Larger_Cursors_res_5120x2880_5k Grim_Dawn_Larger_Cursors_res_7680x4320_8k Cursor_Uninstall"
 	["UI_misc"]="journaljumbers journaljumbersPo factions_goodsinfos factions_goodsinfos_plus_journalnumbers UI_misc_Uninstall"
-	["Sounds"]="Better_Sounds Sounds_Uninstall"
+	["Sounds"]="Better_Sounds Better_Sounds_w_Music Sounds_Uninstall"
 )
 
 # Block top menu options if one or the other is installed
@@ -68,6 +68,7 @@ declare -A URL_array=(
 	["factions_goodsinfos"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/factions_goodsinfos.7z"
 	["factions_goodsinfos_plus_journalnumbers"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/factions_goodsinfos_plus_journalnumbers.7z"
 	["Better_Sounds"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/Better%20Sounds.7z"
+	["Better_Sounds_w_Music"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/Better%20Sounds%20w%20Music.7z"
 )
 # If conflict installed then block the value
 declare -A conflict_array
@@ -97,6 +98,7 @@ declare -A import_location=(
 	["factions_goodsinfos_plus_journalnumbers"]="$SCRIPT_DIR/tmp_grim_GDML/Settings"
 	["Forgotten_Ui_archived"]="$SCRIPT_DIR/tmp_grim_GDML/Ui"
 	["Better_Sounds"]="$SCRIPT_DIR/tmp_grim_GDML/Sound"
+	["Better_Sounds_w_Music"]="$SCRIPT_DIR/tmp_grim_GDML/Sound"
 )
 # This will rename a file so it can be send over
 declare -A mv_dir_formatting=(
@@ -122,6 +124,7 @@ export_location_func(){
 		["factions_goodsinfos_plus_journalnumbers"]="$directory_path"
 		["Forgotten_Ui_archived"]="$directory_path/Settings"
 		["Better_Sounds"]="$directory_path/Settings"
+		["Better_Sounds_w_Music"]="$directory_path/Settings"
 	)
 }
 
