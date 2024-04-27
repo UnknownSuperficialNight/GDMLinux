@@ -22,7 +22,7 @@ SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]:-$0}"; )" &> /dev/null && 
 #
 
 # Top menu options
-array=("Full_Rainbow_Download" "Grim_main_menu" "Grim_UI" "Grim_Internals" "GrimTex_coming_soon" "Cursors" "UI_misc")
+array=("Full_Rainbow_Download" "Grim_main_menu" "Grim_UI" "Grim_Internals" "GrimTex_coming_soon" "Cursors" "UI_misc" "Sounds")
 # Define an associative array to parse menu options
 declare -A menu_items=(
 	["Full_Rainbow_Download"]="Full_Rainbow Full_Rainbow_uninstall"
@@ -31,6 +31,7 @@ declare -A menu_items=(
 	["Grim_Internals"]="Grim_Internals Grim_Internals_Uninstall"
 	["Cursors"]="Grim_Dawn_Larger_Cursors_res_2560x1440_2k Grim_Dawn_Larger_Cursors_res_3840x1600 Grim_Dawn_Larger_Cursors_res_3840x2160_4k Grim_Dawn_Larger_Cursors_res_5120x2880_5k Grim_Dawn_Larger_Cursors_res_7680x4320_8k Cursor_Uninstall"
 	["UI_misc"]="journaljumbers journaljumbersPo factions_goodsinfos factions_goodsinfos_plus_journalnumbers UI_misc_Uninstall"
+	["Sounds"]="Better_Sounds Sounds_Uninstall"
 )
 
 # Block top menu options if one or the other is installed
@@ -43,7 +44,7 @@ declare -A new_array=()
 # If a sub menu item is in this array, it will do "theme default" else it will do Not Installed
 menu_items_t_or_f=(Grim_main_menu Grim_UI)
 # Defines what commands to run in the uninstall function
-uninstall_entries=(Full_Rainbow_uninstall MainMenu_FG Default_Theme Grim_Internals_Uninstall Cursor_Uninstall UI_misc_Uninstall)
+uninstall_entries=(Full_Rainbow_uninstall MainMenu_FG Default_Theme Grim_Internals_Uninstall Cursor_Uninstall UI_misc_Uninstall Sounds_Uninstall)
 # Define an array of custom functions to run instead of the normal uninstall function
 uninstall_entries_custom=(Grim_Internals_Uninstall)
 # Define an associative array that sets URLs for each menu option
@@ -66,6 +67,7 @@ declare -A URL_array=(
 	["journaljumbersPo"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/journaljumbersPo.7z"
 	["factions_goodsinfos"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/factions_goodsinfos.7z"
 	["factions_goodsinfos_plus_journalnumbers"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/factions_goodsinfos_plus_journalnumbers.7z"
+	["Better_Sounds"]="https://github.com/UnknownSuperficialNight/GDMLinux/raw/main/Better%20Sounds.7z"
 )
 # If conflict installed then block the value
 declare -A conflict_array
@@ -94,6 +96,7 @@ declare -A import_location=(
 	["factions_goodsinfos"]="$SCRIPT_DIR/tmp_grim_GDML/Settings"
 	["factions_goodsinfos_plus_journalnumbers"]="$SCRIPT_DIR/tmp_grim_GDML/Settings"
 	["Forgotten_Ui_archived"]="$SCRIPT_DIR/tmp_grim_GDML/Ui"
+	["Better_Sounds"]="$SCRIPT_DIR/tmp_grim_GDML/Sound"
 )
 # This will rename a file so it can be send over
 declare -A mv_dir_formatting=(
@@ -118,8 +121,11 @@ export_location_func(){
 		["factions_goodsinfos"]="$directory_path"
 		["factions_goodsinfos_plus_journalnumbers"]="$directory_path"
 		["Forgotten_Ui_archived"]="$directory_path/Settings"
+		["Better_Sounds"]="$directory_path/Settings"
 	)
 }
+
+##USER CONFIG END
 #if [[ -n "$conflict_main_menu_array" ]]; then
 #for i in "${conflict_main_menu_array[@]}"
 #fi
