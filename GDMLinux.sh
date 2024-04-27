@@ -156,6 +156,7 @@ Help_for_cmdline_args(){
 	echo "$COLOUR" 'Flags:'
 	echo "$COLOUR" '--help|-h # For this help menu'
 	echo "$COLOUR" '--conflict|-c # For generating conflict files to upload to the repo #DEV option'
+	echo "$COLOUR" '--uppercase|-u # For making directories uppercase for saving mods #DEV option'
 }
 #
 while [[ ! $# -eq 0 ]];do
