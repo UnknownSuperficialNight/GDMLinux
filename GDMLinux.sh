@@ -4,12 +4,12 @@
 # Author: [@UnknownSuperficialNight]
 # Author Link: [https://github.com/UnknownSuperficialNight]
 # Date Creation: [2023-07-06]
-# Copyright © 2023-2023 @UnknownSuperficialNight
+# Copyright © 2023-2024 @UnknownSuperficialNight
 # Description: [Grim Dawn Mod Manager for linux]
 
 # All Rights Reserved by @UnknownSuperficialNight
 
-# Don't comment on my crap code i did this all in a 8 hours over time ill improve it to be better you can request new features my making a issue with the enhancement Label
+# Don't comment on my "Interesting" code i did this all in around 8 hours over time ill improve it to be better you can request new features my making a issue with the enhancement Label
 
 # Also hi (｡･ω･)ﾉﾞ hope u like the program
 
@@ -593,12 +593,10 @@ if (( $# == 0 )); then
 									for key_tmp in "${!conflict_array[@]}"; do
 										readarray -t conflict_check_array <<< "$(echo "${conflict_array[$key_tmp]}" | tr ' ' '\n')"
 										for conflict_check in "${conflict_check_array[@]}"; do
-											#        echo "key: $key_tmp, value: $conflict_check, array_select: $Main_menu_ui_TUI_array_select"
 											if [[ "$conflict_check" == "$Main_menu_ui_TUI_array_select" ]]; then
 												get_value_tmp=${conflict_array[$conflict_check]}
 												readarray -t get_value_loop_start <<< "$(echo "$get_value_tmp" | tr ' ' '\n')"
 												for get_value in "${get_value_loop_start[@]}"; do
-													#echo $get_value
 													if [[ -e "$SCRIPT_DIR/cache/$get_value" ]]; then
 														tmp_Main_menu_ui_TUI_array_select="$Main_menu_ui_TUI_array_select"
 														Main_menu_ui_TUI_array_select="$conflict_check"
